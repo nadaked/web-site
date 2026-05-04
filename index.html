@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV - Y. Salih TUNÇEL | Nadaked</title>
-  <link rel="icon" href="images/favicon.ico">
+  <title>CV - Yusuf Salih TUNÇEL</title>
+
   <style>
     :root {
       --text: #222;
@@ -15,61 +15,29 @@
       --paper: #ffffff;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
       padding: 24px;
       background: var(--bg);
       color: var(--text);
-      font-family: "Georgia", "Times New Roman", serif;
-      line-height: 1.45;
+      font-family: "Georgia", serif;
     }
 
     .cv {
       max-width: 900px;
       margin: 0 auto;
       background: var(--paper);
-      padding: 28px 34px 40px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      padding: 28px 34px;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 18px;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 0.2px;
-    }
-
-    .contact {
-      margin-top: 6px;
-      font-size: 1rem;
-      color: #333;
-    }
-
-    .contact+.contact {
-      margin-top: 4px;
-    }
-
-    .contact a {
-      color: inherit;
-      text-decoration: none;
     }
 
     .summary {
-      margin: 18px auto 8px;
-      max-width: 760px;
-      text-align: center;
+      margin-top: 12px;
       font-style: italic;
       color: #444;
-      font-size: 1.03rem;
     }
 
     .section {
@@ -77,474 +45,121 @@
     }
 
     .section-title {
-      font-size: 1.7rem;
-      font-weight: 700;
-      margin: 0 0 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-    }
-
-    .divider {
-      border: 0;
-      border-top: 2px solid var(--line);
-      margin: 0 0 14px;
-    }
-
-    .item {
-      margin-bottom: 16px;
+      font-weight: bold;
+      border-bottom: 2px solid var(--line);
+      margin-bottom: 10px;
     }
 
     .item-head {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
-      align-items: baseline;
-      flex-wrap: wrap;
-    }
-
-    .item-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
-
-    .item-date {
-      font-style: italic;
-      color: #444;
-      white-space: nowrap;
-    }
-
-    .item-subtitle {
-      margin-top: 2px;
-      font-style: italic;
-      color: #444;
     }
 
     ul {
-      margin: 8px 0 0 22px;
-      padding: 0 0 0 14px;
-    }
-
-    li {
-      margin-bottom: 6px;
-    }
-
-    .skills-list li strong {
-      font-weight: 700;
-    }
-
-    .project-tech {
-      font-style: italic;
-      color: var(--muted);
-      font-size: 0.98rem;
-    }
-
-    @media (max-width: 700px) {
-      body {
-        padding: 12px;
-      }
-
-      .cv {
-        padding: 20px 18px 28px;
-      }
-
-      .header h1 {
-        font-size: 1.7rem;
-      }
-
-      .section-title {
-        font-size: 1.35rem;
-      }
-
-      .summary {
-        font-size: 0.98rem;
-      }
-    }
-
-    @media print {
-      body {
-        background: #fff;
-        padding: 0;
-      }
-
-      .cv {
-        max-width: 100%;
-        box-shadow: none;
-        margin: 0;
-        padding: 16px 20px;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
+      margin-left: 20px;
     }
   </style>
 </head>
 
 <body>
   <main class="cv">
+
     <header class="header">
       <h1>Yusuf Salih TUNÇEL</h1>
-      <h2>Unity Game Developer</h2>
-      <div class="contact">Osmangazi / Bursa | 0505 400 21 30</div>
-      <div class="contact"><a href="https://yusufsalihtuncel.com" target="_blank">yusufsalihtuncel.com</a></div>
-      <div class="contact"><a href="mailto:saliht94@gmail.com">saliht94@gmail.com</a></div>
-      <div class="contact">
-        <a href="https://github.com/nadaked" target="_blank">github.com/nadaked</a> |
-        <a href="https://gist.github.com/nadaked" target="_blank">gist.github.com/nadaked</a> |
-        <a href="https://linkedin.com/in/nadaked" target="_blank">linkedin.com/in/nadaked</a>
-      </div>
-      <p class="summary">
-        Game Developer with 5+ years of experience focusing on gameplay systems, multiplayer architectures, and scalable
-        game logic.
-        Experienced in designing modular and maintainable systems including player state management, round lifecycle
-        orchestration,
-        and rule-based gameplay structures.
+      <h2>Game Developer (Unity-focused)</h2>
 
-        Worked across multiplayer and casual mobile games, building real-time gameplay systems with a focus on
-        performance, stability,
-        and clean architecture. Comfortable working across the full development cycle, from prototyping to
-        production-ready systems.
+      <div>Bursa | saliht94@gmail.com</div>
+      <div>github.com/nadaked</div>
+
+      <p class="summary">
+        Game Developer with 5+ years of experience specializing in gameplay systems, multiplayer mechanics, and scalable game architecture.
+        Focused on building reusable systems, real-time gameplay logic, and modular architectures used across multiple game variants.
+        Experienced in developing production-ready mobile games with emphasis on performance, maintainability, and rapid iteration.
       </p>
     </header>
 
     <section class="section">
-      <h2 class="section-title">EXPERIENCE</h2>
-      <hr class="divider" />
+      <div class="section-title">EXPERIENCE</div>
 
-      <article class="item">
+      <div>
         <div class="item-head">
-          <div class="item-title">Senior Unity Game Developer (Unity) – <a href="https://bambugames.com.tr/" ,
-              target="_blank">Bambu Games</a></div>
-          <div class="item-date">06/2025 – 05/2026</div>
+          <strong>Senior Game Developer – Bambu Games</strong>
+          <span>2025 – 2026</span>
         </div>
         <ul>
-          <li>Designed and implemented scalable gameplay system architectures across multiple game projects, improving
-            maintainability and reuse.</li>
-          <li>Led technical decision-making and development workflows, aligning team output with scalable system design
-            principles.</li>
-          <li>Contributed to 70+ game iterations (new titles and revisions), improving gameplay systems, performance,
-            and code quality.</li>
-          <li>Reviewed pull requests and enforced code quality standards across multiple repositories.</li>
-          <li>Mentored developers in building modular, maintainable, and production-ready game systems.</li>
+          <li>Designed scalable gameplay system architectures reused across multiple projects.</li>
+          <li>Contributed to 70+ game iterations enabling rapid production.</li>
+          <li>Improved development efficiency through reusable systems.</li>
+          <li>Mentored developers and improved code quality.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="item">
+      <div>
         <div class="item-head">
-          <div class="item-title">Unity Game Developer - <a href="https://srtyazilim.com/" , target="_blank">SRT
-              Yazılım</a></div>
-          <div class="item-date">04/2020 - 06/2025</div>
+          <strong>Unity Game Developer – SRT Yazılım</strong>
+          <span>2020 – 2025</span>
         </div>
         <ul>
-          <li>Developed a custom AdMob invalid traffic prevention system analyzing user interaction patterns to detect
-            and reduce fraudulent clicks.</li>
-          <li>Improved UI/UX systems to enhance player interaction and overall usability.</li>
-          <li>Contributed to gameplay design and level structure, supporting more engaging and balanced player
-            experiences.</li>
+          <li>Developed ad fraud detection system reducing invalid AdMob interactions.</li>
+          <li>Improved UI/UX systems enhancing player experience.</li>
+          <li>Contributed to gameplay systems and level design.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="item">
-        <div class="item-head">
-          <div class="item-title">Unity Game Developer Tutor - <a href="https://www.kodland.org/tr" ,
-              target="_blank">Kodland</a></div>
-          <div class="item-date">08/2023 - 08/2025</div>
-        </div>
-        <ul>
-          <li>Mentored and graduated 24 student groups through a structured 32-lesson Unity game development program.
-          </li>
-          <li>Covered core topics such as game mechanics, animation, physics, UI systems, and publishing fundamentals
-            for diverse age ranges.</li>
-        </ul>
-      </article>
     </section>
 
     <section class="section">
-      <h2 class="section-title">EDUCATION</h2>
-      <hr class="divider" />
-      <article class="item">
-        <div class="item-head">
-          <div class="item-title">Süleyman Demirel Üniversitesi</div>
-          <div class="item-date">2014 - 2018</div>
-        </div>
-        <div class="item-subtitle">B.Sc, Computer Engineering</div>
-      </article>
+      <div class="section-title">PROJECTS</div>
 
-      <article class="item">
-        <div class="item-head">
-          <div class="item-title">Süleyman Demirel Üniversitesi</div>
-          <div class="item-date">2013 - 2014</div>
-        </div>
-        <div class="item-subtitle">English Preparatory Program</div>
-      </article>
+      <div>
+        <strong>Royal Gem</strong>
+        <ul>
+          <li>Built real-time multiplayer system supporting 4–6 players.</li>
+          <li>Improved gameplay stability by reducing sync issues.</li>
+          <li>Designed modular architecture reused across projects.</li>
+        </ul>
+      </div>
+
+      <div>
+        <strong>TriPeaks Systems</strong>
+        <ul>
+          <li>Developed reusable architecture across multiple card games.</li>
+          <li>Enabled rapid production of new game variants.</li>
+          <li>Implemented flexible rule-based gameplay systems.</li>
+        </ul>
+      </div>
+
+      <div>
+        <strong>Simulation Games</strong>
+        <ul>
+          <li>Developed gameplay systems for driving simulations.</li>
+          <li>Improved player interaction and mechanics.</li>
+        </ul>
+      </div>
+
     </section>
 
     <section class="section">
-      <h2 class="section-title">CORE EXPERTISE</h2>
-      <hr class="divider" />
+      <div class="section-title">SKILLS</div>
       <ul>
-        <li>Gameplay systems development including state-driven architectures and real-time game loops.</li>
-        <li>Multiplayer systems using Photon and same-device architectures with synchronized gameplay.</li>
-        <li>Player state management, round lifecycle orchestration, and rule-based validation systems.</li>
-        <li>Modular and scalable architecture design using SOLID principles and design patterns.</li>
-        <li>Performance optimization for mobile games using profiling, memory control, and efficient runtime systems.
-        </li>
+        <li>Unity (C#), Photon, Firebase</li>
+        <li>Gameplay Systems, Multiplayer Systems</li>
+        <li>SOLID, OOP, Design Patterns</li>
+        <li>Performance Optimization</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2 class="section-title">SKILLS</h2>
-      <hr class="divider" />
-      <ul class="skills-list">
-        <li><strong>Core:</strong> Game Development, Gameplay Systems, Multiplayer Systems, Scalable Architecture</li>
-        <li><strong>Tech Stack:</strong> Unity, C#, Photon, Firebase, AdMob, Python, Flask, JavaScript, SQL</li>
-        <li><strong>Architecture:</strong> SOLID, OOP, MVC, MVP, Strategy Pattern, Observer, Object Pooling</li>
-        <li><strong>Rendering:</strong> URP, HDRP</li>
-        <li><strong>Tools:</strong> Git, PlasticSCM, Jira, Trello, Postman, Unity Profiler</li>
-        <li><strong>Workflow:</strong> Agile, Scrum</li>
-      </ul>
-    </section>
+      <div class="section-title">EDUCATION</div>
 
-    <section class="section">
-      <h2 class="section-title">PROJECTS</h2>
-      <hr class="divider" />
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title"><a href="https://bambugames.com.tr/games" target="_blank">Royal Gem</a></div>
-            <div class="project-tech">Unity 2D – Multiplayer Casual / Slot Hybrid</div>
-          </div>
-        </div>
-        <ul>
-          <li>Designed and implemented a real-time multiplayer round system supporting 4–6 players with synchronized
-            gameplay.</li>
-          <li>Built player state management and input control systems, improving gameplay consistency and reducing
-            desync issues.</li>
-          <li>Developed rule-based validation systems for gameplay actions, ensuring reliable and cheat-resistant
-            mechanics.</li>
-          <li>Created a modular spin system architecture using Strategy Pattern, enabling flexible feature expansion.
-          </li>
-          <li>Implemented task-driven progression mechanics, increasing gameplay depth beyond basic reward systems.</li>
-          <li>Built scalable and maintainable architecture using SOLID principles, enabling reuse across multiple game
-            variants.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title">
-              <a href="https://bambugames.com.tr/games" target="_blank">Volcano</a>
-            </div>
-            <div class="project-tech">Unity 2D – TriPeaks / Casual Card Game</div>
-          </div>
-        </div>
-        <ul>
-          <li>Re-architected and rebuilt a TriPeaks solitaire game with a modular and scalable system design.</li>
-          <li>Implemented a multiplayer gameplay system supporting 4–6 players on a shared device with simultaneous
-            play.</li>
-          <li>Designed core gameplay systems including card state management, dependency-based card unlocking, and
-            rule-based move validation.</li>
-          <li>Implemented a flexible game loop supporting progression systems and dynamic difficulty.</li>
-          <li>Built a clean and maintainable architecture using SOLID principles.</li>
-          <li>Redesigned scene structure and gameplay flow to improve scalability and maintainability.</li>
-          <li>Integrated theme-driven gameplay experience with volcano-based visual progression and reward feedback.
-          </li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title"><a href="https://bambugames.com.tr/games" target="_blank">Babylon Towers</a></div>
-            <div class="project-tech">Unity 2D – TriPeaks Variant / Casual Card Game</div>
-          </div>
-        </div>
-        <ul>
-          <li>Extended an existing TriPeaks game architecture by introducing new gameplay mechanics and rule variations.
-          </li>
-          <li>Implemented a multiplayer gameplay system supporting 4–6 players on a shared device with simultaneous
-            play.</li>
-          <li>Implemented joker-based card system, adding strategic flexibility to core gameplay.</li>
-          <li>Adapted core systems (card state, validation, progression) to support variant-specific rules.</li>
-          <li>Maintained scalability and code reuse by leveraging modular architecture.</li>
-          <li>Enhanced gameplay depth while preserving performance and system integrity.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title"><a href="https://bambugames.com.tr/games" target="_blank">Space Towers</a></div>
-            <div class="project-tech">Unity 2D – TriPeaks Variant / Casual Card Game</div>
-          </div>
-        </div>
-        <ul>
-          <li>Developed a variant of the TriPeaks system with modified gameplay rules and progression flow.</li>
-          <li>Implemented a multiplayer gameplay system supporting 4–6 players on a shared device with simultaneous
-            play.</li>
-          <li>Implemented dual foundation mechanics, increasing strategic decision-making complexity.</li>
-          <li>Designed closed-card distribution system for each round, introducing uncertainty and replayability.</li>
-          <li>Adapted existing core systems to support new rule sets while maintaining clean architecture.</li>
-          <li>Ensured scalability and reusability by leveraging modular and extensible system design.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title">
-              <a href="https://youtu.be/YyUcXRdfXgc" target="_blank">xTreme Adventure Offroad Simulator</a>
-            </div>
-            <div class="item-title">
-              <a href="https://youtu.be/zaxi5ZdvYbo" target="_blank">Truck Driver Offroad Simulator</a>
-            </div>
-            <div class="project-tech">Unity 3D – Simulation</div>
-          </div>
-        </div>
-        <ul>
-          <li>Participated in the full development lifecycle of the project, from initial concept to release.</li>
-          <li>Designed and implemented UI/UX elements to improve player interaction and usability.</li>
-          <li>Integrated advertisement systems and monetization features within the game.</li>
-          <li>Contributed to level design and gameplay structure for off-road driving environments.</li>
-          <li>Extended vehicle physics using NWH Vehicle Physics, customizing driving behavior and handling.</li>
-          <li>Implemented a dynamic mud system affecting vehicle movement and traction, enhancing gameplay realism.</li>
-          <li>Developed a vertex-based terrain deformation system to simulate tire tracks based on wheel collider data.
-          </li>
-          <li>Created promotional materials including gameplay videos and store screenshots for marketing and store
-            listing.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title"><a href="https://play.google.com/store/apps/details?id=com.srtapps.master_of_crash"
-                target="_blank">Master of Crash</a></div>
-            <div class="project-tech">Unity 3D - Hyper Casual</div>
-          </div>
-        </div>
-        <ul>
-          <li>Developed a custom Unity editor tool to accelerate level design, enabling rapid and efficient creation of
-            game levels.</li>
-          <li>Optimized the in-game damage system to improve performance and gameplay responsiveness.</li>
-          <li>Designed and implemented UI/UX elements to enhance player interaction and visual clarity.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title"><a
-                href="https://play.google.com/store/apps/details?id=com.bambugames.babylonsolitaire"
-                target="_blank">Babylon Solitaire</a></div>
-            <div class="project-tech">Unity 2D</div>
-          </div>
-        </div>
-        <ul>
-          <li>Designed and implemented the core system architecture of the game.</li>
-          <li>Integrated and configured AdMob and Firebase services for monetization and analytics.</li>
-          <li>Developed core gameplay mechanics for the TriPeaks solitaire experience.</li>
-          <li>Implemented multiplayer features using Photon Network.</li>
-          <li>Currently under active development.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title">
-              <a href="https://bambugames.com.tr/games" target="_blank">Train Words</a>
-            </div>
-            <div class="project-tech">Unity 2D – Multiplayer Word Game</div>
-          </div>
-        </div>
-        <ul>
-          <li>Developed a 2–4 player word game for the Bambu Games digital game table platform with simultaneous
-            gameplay.</li>
-          <li>Designed and implemented the complete game architecture and scene structure.</li>
-          <li>Implemented core gameplay systems including tile pool management and grid-based word placement.</li>
-          <li>Developed a scoring system based on grid evaluation and word validation logic.</li>
-          <li>Designed a bonus multiplier system to enhance scoring dynamics and strategic depth.</li>
-          <li>Implemented multiplayer gameplay flow with shared state and input management.</li>
-          <li>Handled the full development process except for visual asset design.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title"><a href="https://bambugames.com.tr/games" target="_blank">Battleship</a></div>
-            <div class="project-tech">Unity 2D – Grid-Based Strategy Game</div>
-          </div>
-        </div>
-        <ul>
-          <li>Developed a digital version of the classic Battleship game for the Bambu Games platform.</li>
-          <li>Designed and implemented the full game architecture and scene structure.</li>
-          <li>Built the core grid system and coordinate-based gameplay logic.</li>
-          <li>Implemented ship placement mechanics with grid validation and placement rules.</li>
-          <li>Developed target selection and shot resolution systems based on coordinate-driven attack logic.</li>
-          <li>Implemented core gameplay flow including hit, miss, and ship state tracking.</li>
-          <li>Handled the entire development process except for visual asset design.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title"><a href="https://bambugames.com.tr/games" target="_blank">Drag Box</a></div>
-            <div class="project-tech">Unity 2D – Kids / Matching Game</div>
-          </div>
-        </div>
-        <ul>
-          <li>Designed and developed a visual matching game for children within a rapid one-week development cycle.</li>
-          <li>Implemented a silhouette-based drag-and-drop matching system with accurate placement validation.</li>
-          <li>Built the full gameplay loop including score system, 300-second timed sessions, and win condition logic.
-          </li>
-          <li>Developed dynamic content systems allowing easy addition of new images and levels.</li>
-          <li>Implemented skip mechanics to improve gameplay pacing and user experience.</li>
-          <li>Created a custom Unity Editor tool to streamline image importing and level setup.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title"><a href="https://bambugames.com.tr/games" target="_blank">Letter Box</a></div>
-            <div class="project-tech">Unity 2D – Kids / Word Puzzle Game</div>
-          </div>
-        </div>
-        <ul>
-          <li>Developed a word puzzle game where players complete words based on visual clues.</li>
-          <li>Implemented a drag-and-drop letter placement system with validation and feedback mechanics.</li>
-          <li>Built a scoring system including rewards for correct answers and penalties for incorrect inputs.</li>
-          <li>Developed a data-driven content pipeline using JSON to dynamically generate questions and levels.</li>
-          <li>Created a custom Unity Editor tool to convert JSON data into playable game content automatically.</li>
-          <li>Shared and reused core systems (drag & drop, validation) to accelerate development.</li>
-          <li>Delivered the project within a rapid one-week development cycle.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <div>
-            <div class="item-title"><a href="https://bambugames.com.tr/games" target="_blank">Happy Draw</a></div>
-            <div class="project-tech">Unity 2D – Kids / Drawing Game</div>
-          </div>
-        </div>
-        <ul>
-          <li>Developed a drawing and coloring game allowing users to paint on predefined shapes using customizable
-            tools.</li>
-          <li>Implemented a runtime texture painting system enabling real-time drawing on images.</li>
-          <li>Built brush and eraser tools with adjustable parameters such as size and color.</li>
-          <li>Reused visual assets from other games (Drag Box, Letter Box) to accelerate content production.</li>
-          <li>Designed the system for flexible content expansion and easy asset integration.</li>
-          <li>Delivered the project within a rapid one-week development cycle.</li>
-        </ul>
-      </article>
+      <div class="item-head">
+        <strong>B.Sc Computer Engineering</strong>
+        <span>2014 – 2018</span>
+      </div>
+      <div>Süleyman Demirel University</div>
 
     </section>
+
   </main>
 </body>
 
