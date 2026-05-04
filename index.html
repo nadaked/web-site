@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Yusuf Salih TUNÇEL</title>
-  <link rel="icon" href="images/favicon.ico">
-
   <style>
     :root {
-      --text: #222;
+      --text: #1f1f1f;
       --muted: #5a5a5a;
+      --accent: #2c3e50;
       --line: #9e9e9e;
       --bg: #f4f4f4;
       --paper: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
@@ -21,7 +24,8 @@
       padding: 24px;
       background: var(--bg);
       color: var(--text);
-      font-family: "Georgia", "Times New Roman",  serif;
+      font-family: "Georgia", "Times New Roman", serif;
+      line-height: 1.4;
     }
 
     .cv {
@@ -29,192 +33,385 @@
       margin: 0 auto;
       background: var(--paper);
       padding: 28px 34px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
 
     .header {
       text-align: center;
     }
 
+    .header h1 {
+      margin: 0 0 4px;
+      font-size: 1.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    .header h2 {
+      margin: 0 0 8px;
+      font-size: 1.02rem;
+      font-weight: normal;
+      color: var(--muted);
+    }
+
+    .contact {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
     .summary {
-      margin-top: 12px;
+      margin: 12px 0 0;
       font-style: italic;
-      color: #444;
+      color: #3a3a3a;
+      text-align: center;
+      font-size: 0.95rem;
     }
 
     .section {
-      margin-top: 22px;
+      margin-top: 18px;
     }
 
     .section-title {
       font-weight: bold;
+      font-size: 1.08rem;
+      letter-spacing: 1px;
       border-bottom: 2px solid var(--line);
+      margin-bottom: 8px;
+      padding-bottom: 2px;
+    }
+
+    .item {
       margin-bottom: 10px;
     }
 
     .item-head {
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .item-head .role {
+      font-weight: bold;
+    }
+
+    .item-head .date {
+      color: var(--muted);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .tech {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin: 2px 0 3px;
     }
 
     ul {
-      margin-left: 20px;
+      margin: 4px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 2px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 175px 1fr;
+      gap: 4px 12px;
+      font-size: 0.9rem;
+    }
+
+    .skills-grid dt {
+      font-weight: bold;
+    }
+
+    .skills-grid dd {
+      margin: 0;
+    }
+
+    .lang-list {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+
+    @page {
+      size: A4;
+      margin: 7mm;
     }
 
     @media print {
-  body {
-    background: #fff;
-    padding: 0;
-    font-size: 12px; /* 🔥 küçülttük */
-    line-height: 1.3;
-  }
 
-  .cv {
-    max-width: 100%;
-    box-shadow: none;
-    margin: 0;
-    padding: 10px 12px; /* 🔥 daralttık */
-  }
+      html,
+      body {
+        width: 210mm;
+        min-height: 297mm;
+      }
 
-  .section {
-    margin-top: 14px; /* 🔥 boşluk azalttık */
-  }
+      body {
+        background: #fff;
+        padding: 0;
+        font-size: 10.5px;
+        line-height: 1.22;
+      }
 
-  .item {
-    margin-bottom: 10px;
-  }
+      .cv {
+        max-width: 100%;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+      }
 
-  ul {
-    margin: 4px 0 0 16px;
-  }
+      .header h1 {
+        font-size: 1.35rem;
+      }
 
-  li {
-    margin-bottom: 4px;
-  }
+      .header h2 {
+        font-size: 0.85rem;
+        margin-bottom: 4px;
+      }
 
-  .summary {
-    margin: 10px auto 6px;
-    font-size: 0.95rem;
-  }
+      .contact {
+        font-size: 0.78rem;
+        line-height: 1.15;
+      }
 
-  h1 {
-    font-size: 1.5rem;
-  }
+      .summary {
+        margin: 6px auto 0;
+        font-size: 0.78rem;
+        line-height: 1.18;
+      }
 
-  h2 {
-    font-size: 1rem;
-  }
+      .section {
+        margin-top: 8px;
+      }
 
-  .section-title {
-    font-size: 1.2rem;
-  }
+      .section-title {
+        font-size: 0.86rem;
+        margin-bottom: 4px;
+        padding-bottom: 1px;
+        border-bottom-width: 1px;
+      }
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-}
+      .item {
+        margin-bottom: 5px;
+      }
+
+      .item-head .date {
+        font-size: 0.76rem;
+      }
+
+      .tech {
+        font-size: 0.74rem;
+        margin: 1px 0 2px;
+      }
+
+      ul {
+        margin: 2px 0 0 14px;
+      }
+
+      li {
+        margin-bottom: 1px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 135px 1fr;
+        gap: 2px 8px;
+        font-size: 0.76rem;
+      }
+
+      .lang-list {
+        font-size: 0.76rem;
+        gap: 12px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      section,
+      .item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
   </style>
 </head>
 
 <body>
   <main class="cv">
-
     <header class="header">
       <h1>Yusuf Salih TUNÇEL</h1>
-      <h2>Game Developer (Unity-focused)</h2>
+      <h2>Senior Game Developer (Unity)</h2>
 
-      <div>Bursa | saliht94@gmail.com</div>
-      <div>github.com/nadaked</div>
+      <div class="contact">
+        Bursa, Türkiye &nbsp;|&nbsp;
+        <a href="mailto:saliht94@gmail.com">saliht94@gmail.com</a> &nbsp;|&nbsp;
+        <a href="https://github.com/nadaked" target="_blank" rel="noopener">github.com/nadaked</a> &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/nadaked/" target="_blank" rel="noopener">linkedin.com/in/nadaked</a>
+        &nbsp;|&nbsp;
+        <a href="https://yusufsalihtuncel.com" target="_blank" rel="noopener">yusufsalihtuncel.com</a>
+      </div>
 
       <p class="summary">
-        Game Developer with 5+ years of experience specializing in gameplay systems, multiplayer mechanics, and scalable game architecture.
-        Focused on building reusable systems, real-time gameplay logic, and modular architectures used across multiple game variants.
-        Experienced in developing production-ready mobile games with emphasis on performance, maintainability, and rapid iteration.
+        Senior Unity developer with 5+ years of experience building live mobile games, reusable gameplay frameworks,
+        multiplayer systems, and performance-focused Unity architectures. Specialized in real-time multiplayer,
+        scalable game systems, rapid game-variant production, and maintainable codebases for production environments.
       </p>
     </header>
 
     <section class="section">
       <div class="section-title">EXPERIENCE</div>
 
-      <div>
+      <div class="item">
         <div class="item-head">
-          <strong>Senior Game Developer – Bambu Games</strong>
-          <span>2025 – 2026</span>
+          <span class="role">Senior Game Developer — Bambu Games</span>
+          <span class="date">2025 – 2026</span>
         </div>
         <ul>
-          <li>Designed scalable gameplay system architectures reused across multiple projects.</li>
-          <li>Contributed to 70+ game iterations enabling rapid production.</li>
-          <li>Improved development efficiency through reusable systems.</li>
-          <li>Mentored developers and improved code quality.</li>
+          <li>Architected reusable gameplay systems using state machines, modular UI, event-driven flows, and shared
+            gameplay logic across multiple game projects.</li>
+          <li>Contributed to 70+ production iterations, improving development speed, code reuse, gameplay quality, and
+            maintainability.</li>
+          <li>Built a reusable TriPeaks framework in 2 weeks, enabling new game variants to be produced within 1–2 days
+            depending on mechanic changes and side-feature complexity.</li>
+          <li>Mentored 7 developers through code reviews, technical guidance, and shared development practices.</li>
+          <li>Defined Git workflow and coding standards to improve consistency, onboarding, and review quality across
+            projects.</li>
         </ul>
       </div>
 
-      <div>
+      <div class="item">
         <div class="item-head">
-          <strong>Unity Game Developer – SRT Yazılım</strong>
-          <span>2020 – 2025</span>
+          <span class="role">Unity Game Developer — SRT Yazılım</span>
+          <span class="date">2020 – 2025</span>
         </div>
         <ul>
-          <li>Developed ad fraud detection system reducing invalid AdMob interactions.</li>
-          <li>Improved UI/UX systems enhancing player experience.</li>
-          <li>Contributed to gameplay systems and level design.</li>
+          <li>Built an ad-fraud detection system that filtered high-risk invalid traffic, helping protect long-term
+            AdMob monetization across studio projects.</li>
+          <li>Optimized a frame-critical hot path from 0.36 ms to 0.07 ms per call, reducing GC pressure and improving
+            frame stability on low-end Android devices.</li>
+          <li>Shipped multiple Android mobile titles end-to-end, contributing gameplay systems, level design, UI/UX, and
+            live project support.</li>
+          <li>Improved onboarding, shop, and settings flows across mobile games to increase clarity, usability, and
+            player experience quality.</li>
         </ul>
       </div>
-
     </section>
 
     <section class="section">
-      <div class="section-title">PROJECTS</div>
+      <div class="section-title">SELECTED PROJECTS</div>
 
-      <div>
-        <strong>Royal Gem</strong>
+      <div class="item">
+        <div class="item-head">
+          <span class="role">Royal Gem — Same-device Multiplayer Table Game</span>
+          <span class="date">2026</span>
+        </div>
+        <div class="tech">Unity, C#, same-device multiplayer architecture</div>
         <ul>
-          <li>Built real-time multiplayer system supporting 4–6 players.</li>
-          <li>Improved gameplay stability by reducing sync issues.</li>
-          <li>Designed modular architecture reused across projects.</li>
+          <li>Developed Royal Gem for the Bambu Games physical game table platform with same-device multiplayer
+            supporting 4–6 concurrent players.</li>
+          <li>Completed the project in a focused 3-week development cycle, including synchronized gameplay flow, shared
+            input handling, and round management.</li>
+          <li>Designed gameplay systems optimized for shared-device interaction, ensuring responsiveness and consistent
+            player experience.</li>
         </ul>
       </div>
 
-      <div>
-        <strong>TriPeaks Systems</strong>
+      <div class="item">
+        <div class="item-head">
+          <span class="role">TriPeaks Systems — Same-device Multiplayer Framework</span>
+          <span class="date">2026</span>
+        </div>
+        <div class="tech">Unity, C#, data-driven systems</div>
         <ul>
-          <li>Developed reusable architecture across multiple card games.</li>
-          <li>Enabled rapid production of new game variants.</li>
-          <li>Implemented flexible rule-based gameplay systems.</li>
+          <li>Developed the core TriPeaks framework in 2 weeks for same-device multiplayer gameplay on the Bambu Games
+            table platform.</li>
+          <li>Built reusable systems for card logic, rule validation, progression, and shared player interaction.</li>
+          <li>Enabled production of new TriPeaks variants within 1–2 days by leveraging a modular and data-driven
+            architecture.</li>
         </ul>
       </div>
 
-      <div>
-        <strong>Simulation Games</strong>
+      <div class="item">
+        <div class="item-head">
+          <span class="role">Driving Simulation Games</span>
+          <span class="date">2021 – 2024</span>
+        </div>
+        <div class="tech">Unity, C#, custom physics, Wheel Colliders, Google Play</div>
         <ul>
-          <li>Developed gameplay systems for driving simulations.</li>
-          <li>Improved player interaction and mechanics.</li>
+          <li>Developed gameplay systems, vehicle handling, mission flow, UI/UX, and physics features for driving
+            simulation games published on Google Play.</li>
+          <li>Tuned physics, input feel, and gameplay structure to support both casual accessibility and
+            simulation-style driving feedback.</li>
         </ul>
       </div>
 
+      <div class="item">
+        <div class="item-head">
+          <span class="role">Other Bambu Games Table Projects</span>
+          <span class="date">2026</span>
+        </div>
+        <div class="tech">Unity, C#, table-based multiplayer / casual games</div>
+        <ul>
+          <li>Developed and contributed to multiple casual and multiplayer projects available on the Bambu Games table
+            platform.</li>
+          <li>Reused shared gameplay systems and editor tools to accelerate production across rapid game iterations.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="section">
       <div class="section-title">SKILLS</div>
-      <ul>
-        <li>Unity (C#), Photon, Firebase</li>
-        <li>Gameplay Systems, Multiplayer Systems</li>
-        <li>SOLID, OOP, Design Patterns</li>
-        <li>Performance Optimization</li>
-      </ul>
+
+      <dl class="skills-grid">
+        <dt>Languages</dt>
+        <dd>C# advanced, C++ basic, SQL basic</dd>
+
+        <dt>Engine &amp; Tools</dt>
+        <dd>Unity, URP, UI Toolkit, Addressables, Animator, Cinemachine, Unity Profiler, Memory Profiler</dd>
+
+        <dt>Multiplayer &amp; Backend</dt>
+        <dd>Photon PUN2 / Fusion, Mirror, Firebase Auth, Realtime DB, Firestore, Remote Config, PlayFab</dd>
+
+        <dt>Mobile &amp; Monetization</dt>
+        <dd>Android build pipelines, AdMob, IAP, Mediation, GDPR consent flows, Play Console</dd>
+
+        <dt>Architecture</dt>
+        <dd>SOLID, OOP, MVC, MVP, Observer, State, Command, DOTween, ScriptableObject-driven design</dd>
+
+        <dt>Workflow</dt>
+        <dd>Git, GitHub / GitLab, Trello / Jira, code review, Agile / Scrum</dd>
+
+        <dt>Performance</dt>
+        <dd>Draw call optimization, batching, GC reduction, async/await, object pooling, asset optimization</dd>
+      </dl>
     </section>
 
     <section class="section">
       <div class="section-title">EDUCATION</div>
-
       <div class="item-head">
-        <strong>B.Sc Computer Engineering</strong>
-        <span>2014 – 2018</span>
+        <span class="role">B.Sc., Computer Engineering — Süleyman Demirel University</span>
+        <span class="date">2014 – 2018</span>
       </div>
-      <div>Süleyman Demirel University</div>
-
     </section>
 
+    <section class="section">
+      <div class="section-title">LANGUAGES</div>
+      <div class="lang-list">
+        <span><strong>Turkish</strong> — Native</span>
+        <span><strong>English</strong> — Conversational / Professional Working Proficiency</span>
+      </div>
+    </section>
   </main>
 </body>
 
