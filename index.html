@@ -38,6 +38,39 @@
 
     .header {
       text-align: center;
+      position: relative;
+    }
+
+    .language-switcher {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      gap: 3px;
+      padding: 3px;
+      border: 1px solid #c8c8c8;
+      border-radius: 6px;
+      background: #f7f7f7;
+    }
+
+    .language-switcher button {
+      border: 0;
+      border-radius: 4px;
+      padding: 5px 8px;
+      background: transparent;
+      color: var(--muted);
+      font: 700 0.75rem Arial, sans-serif;
+      cursor: pointer;
+    }
+
+    .language-switcher button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .language-switcher button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
     }
 
     .header h1 {
@@ -173,6 +206,10 @@
         font-size: 1.35rem;
       }
 
+      .language-switcher {
+        display: none;
+      }
+
       .header h2 {
         font-size: 0.85rem;
         margin-bottom: 4px;
@@ -249,6 +286,10 @@
 <body>
   <main class="cv">
     <header class="header">
+      <div class="language-switcher" role="group" aria-label="Dil seçimi">
+        <button type="button" data-language="tr" class="active" aria-pressed="true">TR</button>
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+      </div>
       <h1>Yusuf Salih TUNÇEL</h1>
       <h2>Kıdemli Oyun Geliştirici (Unity) | Yazılım Geliştirici</h2>
 
@@ -279,15 +320,15 @@
         </div>
         <ul>
           <li>Birden fazla oyun projesinde state machine, modüler UI, event-driven akışlar ve ortak oyun mantığı
-            kullanarak yeniden kullanılabilir oyun sistemleri tasarladı.</li>
+            kullanarak yeniden kullanılabilir oyun sistemleri tasarladım.</li>
           <li>70'ten fazla üretim iterasyonuna katkıda bulunarak geliştirme hızını, kod tekrar kullanımını, oyun
-            kalitesini ve sürdürülebilirliği artırdı.</li>
-          <li>Yeniden kullanılabilir TriPeaks framework'ünü 2 haftada geliştirdi; mekanik ve yan özelliklerin
-            karmaşıklığına göre yeni oyun varyasyonlarının 1–2 gün içinde üretilmesini sağladı.</li>
-          <li>Code review, teknik yönlendirme ve ortak geliştirme pratikleriyle 7 geliştiriciye mentorluk yaptı.</li>
+            kalitesini ve sürdürülebilirliği artırdım.</li>
+          <li>Yeniden kullanılabilir TriPeaks framework'ünü 2 haftada geliştirdim; mekanik ve yan özelliklerin
+            karmaşıklığına göre yeni oyun varyasyonlarının 1–2 gün içinde üretilmesini sağladım.</li>
+          <li>Code review, teknik yönlendirme ve ortak geliştirme pratikleriyle 7 geliştiriciye mentorluk yaptım.</li>
           <li>Projelerde tutarlılığı, onboarding sürecini ve inceleme kalitesini artırmak için Git workflow ve kodlama
-            standartlarını belirledi.</li>
-          <li>Eş zamanlı projelerde teknik görevleri, geliştirme önceliklerini ve teslim süreçlerini koordine etti.</li>
+            standartlarını belirledim.</li>
+          <li>Eş zamanlı projelerde teknik görevleri, geliştirme önceliklerini ve teslim süreçlerini koordine ettim.</li>
         </ul>
       </div>
 
@@ -298,12 +339,12 @@
         </div>
         <div class="item-subtitle">Yarı zamanlı</div>
         <ul>
-          <li>9–17 yaş arası çocuk ve gençlere canlı çevrim içi Unity ve oyun geliştirme eğitimi verdi; teknik kavramları
-            ve ders anlatımını farklı yaş gruplarına ve deneyim seviyelerine uyarladı.</li>
+          <li>9–17 yaş arası çocuk ve gençlere canlı çevrim içi Unity ve oyun geliştirme eğitimi verdim; teknik kavramları
+            ve ders anlatımını farklı yaş gruplarına ve deneyim seviyelerine uyarladım.</li>
           <li>Programlama temelleri, oyun mekanikleri, UI, fizik, animasyon ve proje çalışmalarını kapsayan yapılandırılmış
-            müfredatla, her biri ortalama 12 öğrenciden oluşan 24 grubu başarıyla mezun etti.</li>
-          <li>Yoklama ve öğrenci gelişimini takip etti; ödevleri ve ders içi katılımı değerlendirdi, her grup için ders
-            sonrası raporlar ve geri bildirimler hazırladı.</li>
+            müfredatla, her biri ortalama 12 öğrenciden oluşan 24 grubu başarıyla mezun ettim.</li>
+          <li>Yoklama ve öğrenci gelişimini takip ettim; ödevleri ve ders içi katılımı değerlendirdim, her grup için ders
+            sonrası raporlar ve geri bildirimler hazırladım.</li>
         </ul>
       </div>
 
@@ -314,15 +355,15 @@
         </div>
         <ul>
           <li>Yüksek riskli geçersiz trafiği filtreleyen bir reklam sahtekârlığı tespit sistemi geliştirerek stüdyo
-            projelerindeki uzun vadeli AdMob gelirlerini korumaya katkı sağladı.</li>
+            projelerindeki uzun vadeli AdMob gelirlerini korumaya katkı sağladım.</li>
           <li>Üretimdeki mobil uygulamalar için Firebase tabanlı uygulama verileri, authentication, analytics ve Remote
-            Config entegrasyonlarını gerçekleştirdi ve yönetti.</li>
-          <li>Frame açısından kritik bir işlemi çağrı başına 0,36 ms'den 0,07 ms'ye optimize ederek GC yükünü azalttı ve
-            düşük donanımlı Android cihazlarda frame kararlılığını artırdı.</li>
+            Config entegrasyonlarını gerçekleştirdim ve yönettim.</li>
+          <li>Frame açısından kritik bir işlemi çağrı başına 0,36 ms'den 0,07 ms'ye optimize ederek GC yükünü azalttım ve
+            düşük donanımlı Android cihazlarda frame kararlılığını artırdım.</li>
           <li>Oyun sistemleri, level design, UI/UX ve canlı proje desteğine katkı sağlayarak birden fazla Android mobil
-            oyununun uçtan uca yayınlanmasını gerçekleştirdi.</li>
+            oyununun uçtan uca yayınlanmasını gerçekleştirdim.</li>
           <li>Mobil oyunlardaki onboarding, mağaza ve ayarlar akışlarını geliştirerek kullanılabilirliği ve oyuncu
-            deneyimini iyileştirdi.</li>
+            deneyimini iyileştirdim.</li>
         </ul>
       </div>
     </section>
@@ -338,11 +379,11 @@
         <div class="tech">Unity, C#, aynı cihazda multiplayer mimarisi</div>
         <ul>
           <li>Royal Gem'i Bambu Games fiziksel oyun masası platformu için aynı cihazda eş zamanlı 4–6 oyuncuyu
-            destekleyecek şekilde geliştirdi.</li>
+            destekleyecek şekilde geliştirdim.</li>
           <li>Senkronize oyun akışı, ortak input yönetimi ve tur yönetimi dahil projeyi 3 haftalık yoğun bir geliştirme
-            sürecinde tamamladı.</li>
+            sürecinde tamamladım.</li>
           <li>Ortak cihaz etkileşimi için optimize edilmiş, hızlı tepki veren ve tutarlı oyuncu deneyimi sunan oyun
-            sistemleri tasarladı.</li>
+            sistemleri tasarladım.</li>
         </ul>
       </div>
 
@@ -354,10 +395,10 @@
         <div class="tech">Unity, C#, data-driven sistemler</div>
         <ul>
           <li>Bambu Games masa platformundaki aynı cihazda multiplayer oyunlar için temel TriPeaks framework'ünü 2
-            haftada geliştirdi.</li>
+            haftada geliştirdim.</li>
           <li>Kart mantığı, kural doğrulama, ilerleme ve ortak oyuncu etkileşimi için yeniden kullanılabilir sistemler
-            geliştirdi.</li>
-          <li>Modüler ve data-driven mimari sayesinde yeni TriPeaks varyasyonlarının 1–2 gün içinde üretilmesini sağladı.</li>
+            geliştirdim.</li>
+          <li>Modüler ve data-driven mimari sayesinde yeni TriPeaks varyasyonlarının 1–2 gün içinde üretilmesini sağladım.</li>
         </ul>
       </div>
 
@@ -369,9 +410,9 @@
         <div class="tech">Unity, C#, özel fizik sistemleri, Wheel Colliders, Google Play</div>
         <ul>
           <li>Google Play'de yayınlanan sürüş simülasyonu oyunları için oyun sistemleri, araç kontrolü, görev akışı,
-            UI/UX ve fizik özellikleri geliştirdi.</li>
+            UI/UX ve fizik özellikleri geliştirdim.</li>
           <li>Hem casual erişilebilirliği hem de simülasyon tarzı sürüş hissini desteklemek için fizik, input hissi ve
-            oyun yapısını düzenledi.</li>
+            oyun yapısını düzenledim.</li>
         </ul>
       </div>
 
@@ -383,9 +424,9 @@
         <div class="tech">Unity, C#, masa tabanlı multiplayer / casual oyunlar</div>
         <ul>
           <li>Bambu Games masa platformunda yer alan birçok casual ve multiplayer projenin geliştirilmesine katkı
-            sağladı.</li>
+            sağladım.</li>
           <li>Hızlı oyun iterasyonlarında üretimi hızlandırmak için ortak oyun sistemlerini ve editor araçlarını yeniden
-            kullandı.</li>
+            kullandım.</li>
         </ul>
       </div>
     </section>
@@ -440,6 +481,103 @@
       </div>
     </section>
   </main>
+  <script>
+    const translatableElements = document.querySelectorAll(
+      ".header h2, .summary, .section-title, .role, .item-subtitle, li, .tech, .skills-grid dt, .skills-grid dd, .lang-list span"
+    );
+
+    const englishContent = [
+      "Senior Game Developer (Unity) | Software Developer",
+      "I am a Computer Engineering graduate with more than 5 years of software development experience. I have advanced knowledge of C# and Unity, and also work with Python, SQL, relational and NoSQL database design, Firebase services, software architecture, team leadership, and project management. I develop production-ready, maintainable, and performance-focused applications, tools, and interactive systems.",
+      "EXPERIENCE",
+      "Senior Game Developer — Bambu Games",
+      "Architected reusable gameplay systems using state machines, modular UI, event-driven flows, and shared gameplay logic across multiple game projects.",
+      "Contributed to 70+ production iterations, improving development speed, code reuse, gameplay quality, and maintainability.",
+      "Built a reusable TriPeaks framework in 2 weeks, enabling new game variants to be produced within 1–2 days depending on mechanic changes and side-feature complexity.",
+      "Mentored 7 developers through code reviews, technical guidance, and shared development practices.",
+      "Defined Git workflows and coding standards to improve consistency, onboarding, and review quality across projects.",
+      "Coordinated technical tasks, implementation priorities, and delivery across concurrent projects.",
+      "Online Coding Instructor — Unity — Kodland",
+      "Part-time",
+      "Delivered live online Unity and game development education to children and teenagers aged 9–17, adapting technical concepts and lesson delivery to different age groups and experience levels.",
+      "Successfully graduated 24 student groups, with approximately 12 students per group, through a structured curriculum covering programming fundamentals, game mechanics, UI, physics, animation, and project work.",
+      "Tracked attendance and student progress, evaluated assignments and in-class participation, and prepared post-lesson reports and feedback for each group.",
+      "Unity Game Developer — SRT Yazılım",
+      "Built an ad-fraud detection system that filtered high-risk invalid traffic, helping protect long-term AdMob monetization across studio projects.",
+      "Integrated and managed Firebase-backed application data, authentication, analytics, and Remote Config for production mobile applications.",
+      "Optimized a frame-critical operation from 0.36 ms to 0.07 ms per call, reducing GC pressure and improving frame stability on low-end Android devices.",
+      "Shipped multiple Android mobile titles end-to-end, contributing gameplay systems, level design, UI/UX, and live project support.",
+      "Improved onboarding, shop, and settings flows across mobile games to increase usability and player experience quality.",
+      "SELECTED PROJECTS",
+      "Royal Gem — Same-device Multiplayer Table Game",
+      "Unity, C#, same-device multiplayer architecture",
+      "Developed Royal Gem for the Bambu Games physical game table platform with same-device multiplayer supporting 4–6 concurrent players.",
+      "Completed the project in a focused 3-week development cycle, including synchronized gameplay flow, shared input handling, and round management.",
+      "Designed gameplay systems optimized for shared-device interaction, ensuring responsiveness and a consistent player experience.",
+      "TriPeaks Systems — Same-device Multiplayer Framework",
+      "Unity, C#, data-driven systems",
+      "Developed the core TriPeaks framework in 2 weeks for same-device multiplayer gameplay on the Bambu Games table platform.",
+      "Built reusable systems for card logic, rule validation, progression, and shared player interaction.",
+      "Enabled production of new TriPeaks variants within 1–2 days by leveraging a modular and data-driven architecture.",
+      "Driving Simulation Games",
+      "Unity, C#, custom physics systems, Wheel Colliders, Google Play",
+      "Developed gameplay systems, vehicle handling, mission flow, UI/UX, and physics features for driving simulation games published on Google Play.",
+      "Tuned physics, input feel, and gameplay structure to support both casual accessibility and simulation-style driving feedback.",
+      "Other Bambu Games Table Projects",
+      "Unity, C#, table-based multiplayer / casual games",
+      "Developed and contributed to multiple casual and multiplayer projects available on the Bambu Games table platform.",
+      "Reused shared gameplay systems and editor tools to accelerate production across rapid game iterations.",
+      "SKILLS",
+      "Programming Languages",
+      "Advanced C#, Python, SQL, Android Java",
+      "Software Development",
+      "Application development, requirements analysis, debugging, testing, automation, API integration",
+      "Database",
+      "Relational database and schema design, SQL queries, CRUD operations, data modeling, NoSQL database management",
+      "Engine &amp; Tools",
+      "Unity, URP, UI Toolkit, Addressables, Animator, Cinemachine, Unity Profiler, Memory Profiler",
+      "Multiplayer &amp; Backend",
+      "Firebase Auth, Realtime Database, Firestore, Remote Config, PlayFab, Photon PUN2 / Fusion, Mirror",
+      "Mobile &amp; Monetization",
+      "Android build pipelines, AdMob, IAP, Mediation, GDPR consent flows, Play Console",
+      "Architecture",
+      "SOLID, OOP, MVC, MVP, Observer, State, Command, DOTween, ScriptableObject-driven design",
+      "Workflow",
+      "Git, GitHub / GitLab, Trello / Jira, code review, team leadership, project management, Agile / Scrum",
+      "Performance",
+      "Draw call optimization, batching, GC reduction, async/await, object pooling, asset optimization",
+      "EDUCATION",
+      "B.Sc., Computer Engineering — Süleyman Demirel University",
+      "LANGUAGES",
+      "<strong>Turkish</strong> — Native",
+      "<strong>English</strong> — Conversational / Professional Working Proficiency"
+    ];
+
+    translatableElements.forEach((element, index) => {
+      element.dataset.tr = element.innerHTML;
+      element.dataset.en = englishContent[index];
+    });
+
+    function setLanguage(language) {
+      const selectedLanguage = language === "en" ? "en" : "tr";
+      translatableElements.forEach((element) => {
+        element.innerHTML = element.dataset[selectedLanguage];
+      });
+      document.documentElement.lang = selectedLanguage;
+      document.querySelectorAll("[data-language]").forEach((button) => {
+        const isActive = button.dataset.language === selectedLanguage;
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+      localStorage.setItem("cv-language", selectedLanguage);
+    }
+
+    document.querySelectorAll("[data-language]").forEach((button) => {
+      button.addEventListener("click", () => setLanguage(button.dataset.language));
+    });
+
+    setLanguage(localStorage.getItem("cv-language") || "tr");
+  </script>
 </body>
 
 </html>
