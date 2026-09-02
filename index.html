@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>CV - Yusuf Salih TUNÇEL</title>
+
   <style>
     :root {
       --text: #1f1f1f;
@@ -138,6 +140,12 @@
       white-space: nowrap;
     }
 
+    .item-subtitle {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin: 2px 0 3px;
+    }
+
     .tech {
       font-size: 0.83rem;
       color: var(--muted);
@@ -245,6 +253,11 @@
         font-size: 0.76rem;
       }
 
+      .item-subtitle {
+        font-size: 0.74rem;
+        margin: 1px 0 2px;
+      }
+
       .tech {
         font-size: 0.74rem;
         margin: 1px 0 2px;
@@ -284,300 +297,1078 @@
 </head>
 
 <body>
+
   <main class="cv">
+
     <header class="header">
-      <div class="language-switcher" role="group" aria-label="Dil seçimi">
-        <button type="button" data-language="tr" class="active" aria-pressed="true">TR</button>
-        <button type="button" data-language="en" aria-pressed="false">EN</button>
+
+      <div
+        class="language-switcher"
+        role="group"
+        aria-label="Dil seçimi"
+      >
+        <button
+          type="button"
+          data-language="tr"
+          class="active"
+          aria-pressed="true"
+        >
+          TR
+        </button>
+
+        <button
+          type="button"
+          data-language="en"
+          aria-pressed="false"
+        >
+          EN
+        </button>
       </div>
+
       <h1>Yusuf Salih TUNÇEL</h1>
-      <h2>Kıdemli Oyun Geliştirici (Unity) | Yazılım Geliştirici</h2>
+
+      <h2>
+        Kıdemli Oyun Geliştirici (Unity) | Yazılım Geliştirici
+      </h2>
 
       <div class="contact">
-        Bursa, Türkiye &nbsp;|&nbsp;
-        <a href="mailto:saliht94@gmail.com">saliht94@gmail.com</a> &nbsp;|&nbsp;
-        <a href="https://github.com/nadaked" target="_blank" rel="noopener">github.com/nadaked</a> &nbsp;|&nbsp;
-        <a href="https://www.linkedin.com/in/nadaked/" target="_blank" rel="noopener">linkedin.com/in/nadaked</a>
+
+        Bursa, Türkiye
         &nbsp;|&nbsp;
-        <a href="https://yusufsalihtuncel.com" target="_blank" rel="noopener">yusufsalihtuncel.com</a>
+
+        <a href="mailto:saliht94@gmail.com">
+          saliht94@gmail.com
+        </a>
+
+        &nbsp;|&nbsp;
+
+        <a
+          href="https://github.com/nadaked"
+          target="_blank"
+          rel="noopener"
+        >
+          github.com/nadaked
+        </a>
+
+        &nbsp;|&nbsp;
+
+        <a
+          href="https://www.linkedin.com/in/nadaked/"
+          target="_blank"
+          rel="noopener"
+        >
+          linkedin.com/in/nadaked
+        </a>
+
+        &nbsp;|&nbsp;
+
+        <a
+          href="https://yusufsalihtuncel.com"
+          target="_blank"
+          rel="noopener"
+        >
+          yusufsalihtuncel.com
+        </a>
+
       </div>
 
       <p class="summary">
-        Bilgisayar Mühendisliği mezunuyum ve 5 yılı aşkın süredir yazılım geliştiriyorum. C# ve Unity alanlarında ileri
-        seviye bilgi birikimine sahibim. Python, SQL, ilişkisel ve NoSQL veritabanı tasarımı, Firebase servisleri,
-        yazılım mimarisi, ekip liderliği ve proje yönetimi konularında da çalışıyorum. Üretime hazır, sürdürülebilir ve
-        performans odaklı uygulamalar, araçlar ve etkileşimli sistemler geliştiriyorum.
+        Bilgisayar Mühendisliği mezunuyum ve 6 yılı aşkın süredir yazılım geliştiriyorum.
+        C# ve Unity alanlarında ileri seviye bilgi birikimine sahibim.
+        Python, SQL, ilişkisel ve NoSQL veritabanı tasarımı, Firebase servisleri,
+        yazılım mimarisi, ekip liderliği ve proje yönetimi konularında da çalışıyorum.
+        Üretime hazır, sürdürülebilir ve performans odaklı uygulamalar,
+        araçlar ve etkileşimli sistemler geliştiriyorum.
       </p>
+
     </header>
 
+
+    <!-- EXPERIENCE -->
+
     <section class="section">
-      <div class="section-title">DENEYİM</div>
 
-      <div class="item">
-        <div class="item-head">
-          <span class="role">Kıdemli Oyun Geliştirici — Bambu Games</span>
-          <span class="date">06-2025 – 05-2026</span>
-        </div>
-        <ul>
-          <li>Birden fazla oyun projesinde state machine, modüler UI, event-driven akışlar ve ortak oyun mantığı
-            kullanarak yeniden kullanılabilir oyun sistemleri tasarladım.</li>
-          <li>70'ten fazla üretim iterasyonuna katkıda bulunarak geliştirme hızını, kod tekrar kullanımını, oyun
-            kalitesini ve sürdürülebilirliği artırdım.</li>
-          <li>Yeniden kullanılabilir TriPeaks framework'ünü 2 haftada geliştirdim; mekanik ve yan özelliklerin
-            karmaşıklığına göre yeni oyun varyasyonlarının 1–2 gün içinde üretilmesini sağladım.</li>
-          <li>Code review, teknik yönlendirme ve ortak geliştirme pratikleriyle 7 geliştiriciye mentorluk yaptım.</li>
-          <li>Projelerde tutarlılığı, onboarding sürecini ve inceleme kalitesini artırmak için Git workflow ve kodlama
-            standartlarını belirledim.</li>
-          <li>Eş zamanlı projelerde teknik görevleri, geliştirme önceliklerini ve teslim süreçlerini koordine ettim.</li>
-        </ul>
+      <div class="section-title">
+        DENEYİM
       </div>
 
-      <div class="item">
-        <div class="item-head">
-          <span class="role">Online Kodlama Eğitmeni — Unity — Kodland</span>
-          <span class="date">08-2023 – 08-2025</span>
-        </div>
-        <div class="item-subtitle">Yarı zamanlı</div>
-        <ul>
-          <li>9–17 yaş arası çocuk ve gençlere canlı çevrim içi Unity ve oyun geliştirme eğitimi verdim; teknik kavramları
-            ve ders anlatımını farklı yaş gruplarına ve deneyim seviyelerine uyarladım.</li>
-          <li>Programlama temelleri, oyun mekanikleri, UI, fizik, animasyon ve proje çalışmalarını kapsayan yapılandırılmış
-            müfredatla, her biri ortalama 12 öğrenciden oluşan 24 grubu başarıyla mezun ettim.</li>
-          <li>Yoklama ve öğrenci gelişimini takip ettim; ödevleri ve ders içi katılımı değerlendirdim, her grup için ders
-            sonrası raporlar ve geri bildirimler hazırladım.</li>
-        </ul>
-      </div>
+
+      <!-- FINK GAMES -->
 
       <div class="item">
+
         <div class="item-head">
-          <span class="role">Unity Oyun Geliştirici — SRT Yazılım</span>
-          <span class="date">04-2020 – 09-2025</span>
+
+          <span class="role">
+            Kıdemli Oyun Geliştirici — Fink Games
+          </span>
+
+          <span class="date">
+            <span
+              class="localized-date"
+              data-tr="2026 – Günümüz"
+              data-en="2026 – Present"
+            >
+              2026 – Günümüz
+            </span>
+          </span>
+
         </div>
+
         <ul>
-          <li>Yüksek riskli geçersiz trafiği filtreleyen bir reklam sahtekârlığı tespit sistemi geliştirerek stüdyo
-            projelerindeki uzun vadeli AdMob gelirlerini korumaya katkı sağladım.</li>
-          <li>Üretimdeki mobil uygulamalar için Firebase tabanlı uygulama verileri, authentication, analytics ve Remote
-            Config entegrasyonlarını gerçekleştirdim ve yönettim.</li>
-          <li>Frame açısından kritik bir işlemi çağrı başına 0,36 ms'den 0,07 ms'ye optimize ederek GC yükünü azalttım ve
-            düşük donanımlı Android cihazlarda frame kararlılığını artırdım.</li>
-          <li>Oyun sistemleri, level design, UI/UX ve canlı proje desteğine katkı sağlayarak birden fazla Android mobil
-            oyununun uçtan uca yayınlanmasını gerçekleştirdim.</li>
-          <li>Mobil oyunlardaki onboarding, mağaza ve ayarlar akışlarını geliştirerek kullanılabilirliği ve oyuncu
-            deneyimini iyileştirdim.</li>
+
+          <li>
+            Birden fazla Unity projesinde ortak kullanılmak üzere service locator,
+            modüler servisler ve yeniden kullanılabilir paketlerden oluşan
+            FinkAPI altyapısını geliştirdim.
+          </li>
+
+          <li>
+            Gameplay flow, board/path, player ve takım rotasyonu, state yönetimi
+            ve etkileşim sistemleri dahil olmak üzere masa ve casual oyunlarının
+            temel oyun sistemlerini geliştirdim.
+          </li>
+
+          <li>
+            Heartbeat, production log reporting ve ortak API servisleri gibi
+            yeniden kullanılabilir runtime sistemleri geliştirerek projeler
+            arasındaki teknik altyapının standartlaştırılmasına katkı sağladım.
+          </li>
+
+          <li>
+            Player HUD, interaction panelleri ve ortak UI animation sistemleri
+            geliştirerek farklı oyunlarda tutarlı ve yeniden kullanılabilir
+            kullanıcı arayüzü altyapısı oluşturdum.
+          </li>
+
+          <li>
+            Tasarım ekibiyle koordineli çalışarak UI/UX tasarımlarının teknik
+            uygulanabilirliğini değerlendirdim, oyun ve kullanıcı akışlarını
+            birlikte şekillendirdim ve tasarımların Unity entegrasyonunu
+            gerçekleştirdim.
+          </li>
+
+          <li>
+            Oyun geliştirme ekibindeki stajyerlere görev planlama, code review ve teknik yönlendirme süreçlerinde mentorluk ederek gerçek projelerde aktif geliştirme deneyimi kazanmalarını sağladım.
+          </li>
+
         </ul>
+
       </div>
+
+
+      <!-- BAMBU GAMES -->
+
+      <div class="item">
+
+        <div class="item-head">
+
+          <span class="role">
+            Kıdemli Oyun Geliştirici — Bambu Games
+          </span>
+
+          <span class="date">
+            06-2025 – 05-2026
+          </span>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Birden fazla oyun projesinde state machine, modüler UI,
+            event-driven akışlar ve ortak oyun mantığı kullanarak yeniden
+            kullanılabilir oyun sistemleri tasarladım.
+          </li>
+
+          <li>
+            70'ten fazla üretim iterasyonuna katkıda bulunarak geliştirme hızını,
+            kod tekrar kullanımını, oyun kalitesini ve sürdürülebilirliği artırdım.
+          </li>
+
+          <li>
+            Yeniden kullanılabilir TriPeaks framework'ünü 2 haftada geliştirdim;
+            mekanik ve yan özelliklerin karmaşıklığına göre yeni oyun
+            varyasyonlarının 1–2 gün içinde üretilmesini sağladım.
+          </li>
+
+          <li>
+            Code review, teknik yönlendirme ve ortak geliştirme pratikleriyle
+            7 geliştiriciye mentorluk yaptım.
+          </li>
+
+          <li>
+            Projelerde tutarlılığı, onboarding sürecini ve inceleme kalitesini
+            artırmak için Git workflow ve kodlama standartlarını belirledim.
+          </li>
+
+          <li>
+            Eş zamanlı projelerde teknik görevleri, geliştirme önceliklerini
+            ve teslim süreçlerini koordine ettim.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- KODLAND -->
+
+      <div class="item">
+
+        <div class="item-head">
+
+          <span class="role">
+            Online Kodlama Eğitmeni — Unity — Kodland
+          </span>
+
+          <span class="date">
+            08-2023 – 08-2025
+          </span>
+
+        </div>
+
+        <div class="item-subtitle">
+          Yarı zamanlı
+        </div>
+
+        <ul>
+
+          <li>
+            9–17 yaş arası çocuk ve gençlere canlı çevrim içi Unity ve
+            oyun geliştirme eğitimi verdim; teknik kavramları ve ders
+            anlatımını farklı yaş gruplarına ve deneyim seviyelerine uyarladım.
+          </li>
+
+          <li>
+            Programlama temelleri, oyun mekanikleri, UI, fizik, animasyon ve
+            proje çalışmalarını kapsayan yapılandırılmış müfredatla,
+            her biri ortalama 12 öğrenciden oluşan 24 grubu başarıyla mezun ettim.
+          </li>
+
+          <li>
+            Yoklama ve öğrenci gelişimini takip ettim; ödevleri ve ders içi
+            katılımı değerlendirdim, her grup için ders sonrası raporlar
+            ve geri bildirimler hazırladım.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- SRT -->
+
+      <div class="item">
+
+        <div class="item-head">
+
+          <span class="role">
+            Unity Oyun Geliştirici — SRT Yazılım
+          </span>
+
+          <span class="date">
+            04-2020 – 09-2025
+          </span>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Yüksek riskli geçersiz trafiği filtreleyen bir reklam sahtekârlığı
+            tespit sistemi geliştirerek stüdyo projelerindeki uzun vadeli
+            AdMob gelirlerini korumaya katkı sağladım.
+          </li>
+
+          <li>
+            Üretimdeki mobil uygulamalar için Firebase tabanlı uygulama verileri,
+            authentication, analytics ve Remote Config entegrasyonlarını
+            gerçekleştirdim ve yönettim.
+          </li>
+
+          <li>
+            Frame açısından kritik bir işlemi çağrı başına 0,36 ms'den
+            0,07 ms'ye optimize ederek GC yükünü azalttım ve düşük donanımlı
+            Android cihazlarda frame kararlılığını artırdım.
+          </li>
+
+          <li>
+            Oyun sistemleri, level design, UI/UX ve canlı proje desteğine
+            katkı sağlayarak birden fazla Android mobil oyununun uçtan uca
+            yayınlanmasını gerçekleştirdim.
+          </li>
+
+          <li>
+            Mobil oyunlardaki onboarding, mağaza ve ayarlar akışlarını
+            geliştirerek kullanılabilirliği ve oyuncu deneyimini iyileştirdim.
+          </li>
+
+        </ul>
+
+      </div>
+
     </section>
 
+
+    <!-- SELECTED PROJECTS -->
+
     <section class="section">
-      <div class="section-title">SEÇİLMİŞ PROJELER</div>
 
-      <div class="item">
-        <div class="item-head">
-          <span class="role">Royal Gem — Aynı Cihazda Multiplayer Masa Oyunu</span>
-          <span class="date">2026</span>
-        </div>
-        <div class="tech">Unity, C#, aynı cihazda multiplayer mimarisi</div>
-        <ul>
-          <li>Royal Gem'i Bambu Games fiziksel oyun masası platformu için aynı cihazda eş zamanlı 4–6 oyuncuyu
-            destekleyecek şekilde geliştirdim.</li>
-          <li>Senkronize oyun akışı, ortak input yönetimi ve tur yönetimi dahil projeyi 3 haftalık yoğun bir geliştirme
-            sürecinde tamamladım.</li>
-          <li>Ortak cihaz etkileşimi için optimize edilmiş, hızlı tepki veren ve tutarlı oyuncu deneyimi sunan oyun
-            sistemleri tasarladım.</li>
-        </ul>
+      <div class="section-title">
+        SEÇİLMİŞ PROJELER
       </div>
 
-      <div class="item">
-        <div class="item-head">
-          <span class="role">TriPeaks Sistemleri — Aynı Cihazda Multiplayer Framework</span>
-          <span class="date">2026</span>
-        </div>
-        <div class="tech">Unity, C#, data-driven sistemler</div>
-        <ul>
-          <li>Bambu Games masa platformundaki aynı cihazda multiplayer oyunlar için temel TriPeaks framework'ünü 2
-            haftada geliştirdim.</li>
-          <li>Kart mantığı, kural doğrulama, ilerleme ve ortak oyuncu etkileşimi için yeniden kullanılabilir sistemler
-            geliştirdim.</li>
-          <li>Modüler ve data-driven mimari sayesinde yeni TriPeaks varyasyonlarının 1–2 gün içinde üretilmesini sağladım.</li>
-        </ul>
-      </div>
+      <!-- FINK GAMES -->
 
       <div class="item">
+
         <div class="item-head">
-          <span class="role">Sürüş Simülasyonu Oyunları</span>
-          <span class="date">2021 – 2024</span>
+
+          <span class="role">
+            Fink Games — 40+ Masa ve Casual Oyun
+          </span>
+
+          <span class="date">
+            2026 – Günümüz
+          </span>
+
         </div>
-        <div class="tech">Unity, C#, özel fizik sistemleri, Wheel Colliders, Google Play</div>
+
+        <div class="tech">
+          Unity, C#, aynı cihazda multiplayer, yeniden kullanılabilir oyun sistemleri
+        </div>
+
         <ul>
-          <li>Google Play'de yayınlanan sürüş simülasyonu oyunları için oyun sistemleri, araç kontrolü, görev akışı,
-            UI/UX ve fizik özellikleri geliştirdim.</li>
-          <li>Hem casual erişilebilirliği hem de simülasyon tarzı sürüş hissini desteklemek için fizik, input hissi ve
-            oyun yapısını düzenledim.</li>
+
+          <li>
+            Fink Games platformu için aynı cihazda multiplayer ve casual
+            türlerinde 40'tan fazla oyun geliştirdim.
+          </li>
+
+          <li>
+            Gayrimenkul ticareti, yarış/ilerleme, kelime oyunları,
+            kart oyunları ve arcade türleri dahil farklı oyun mekaniklerini
+            Unity üzerinde geliştirdim.
+          </li>
+
+          <li>
+            Ortak gameplay, input, tur yönetimi, oyuncu akışı ve UI
+            sistemlerini yeniden kullanarak farklı oyunların daha hızlı
+            geliştirilmesini ve projeler arasında tutarlı bir mimari
+            kullanılmasını sağladım.
+          </li>
+
         </ul>
+
       </div>
 
+
+        <!-- FINK PLAYING CARD & ANIMATION FRAMEWORK -->
+
       <div class="item">
+
         <div class="item-head">
-          <span class="role">Diğer Bambu Games Masa Projeleri</span>
-          <span class="date">2026</span>
+
+          <span class="role">
+            Playing Card & Animation Framework — Yeniden Kullanılabilir Kart Altyapısı
+          </span>
+
+          <span class="date">
+            2026
+          </span>
+
         </div>
-        <div class="tech">Unity, C#, masa tabanlı multiplayer / casual oyunlar</div>
+
+        <div class="tech">
+          Unity, C#, reusable architecture, data-driven sistemler, animation systems
+        </div>
+
         <ul>
-          <li>Bambu Games masa platformunda yer alan birçok casual ve multiplayer projenin geliştirilmesine katkı
-            sağladım.</li>
-          <li>Hızlı oyun iterasyonlarında üretimi hızlandırmak için ortak oyun sistemlerini ve editor araçlarını yeniden
-            kullandım.</li>
+
+          <li>
+            Standart iskambil destesi kullanan oyunlar için kart oluşturma,
+            deste yönetimi, dağıtım, seçim, sıralama ve ortak kart davranışlarını
+            kapsayan yeniden kullanılabilir bir temel geliştirdim.
+          </li>
+
+          <li>
+            Kartların dağıtılması, taşınması, çevrilmesi ve hedef noktalar
+            arasında hareket ettirilmesi gibi animasyonları ortak bir sistem
+            altında geliştirerek farklı projelerde tekrar kullanılabilir hale getirdim.
+          </li>
+
+          <li>
+            Ortak kart altyapısını oyunlara özel kurallardan ayırarak
+            yeni kart oyunlarının daha az tekrar kodla ve daha kısa
+            geliştirme süresiyle üretilmesini sağladım.
+          </li>
+
+          <li>
+            Bu altyapıyı TriPeaks, Eleven, Solitaire, Spider Solitaire,
+            Batak ve Pişti gibi kart oyunlarının yanı sıra Monopoly ve
+            Tabu gibi kart etkileşimi kullanan farklı oyunlarda da kullandım.
+          </li>
+
         </ul>
+
       </div>
+
+
+      <!-- ROYAL GEM -->
+
+      <div class="item">
+
+        <div class="item-head">
+
+          <span class="role">
+            Royal Gem — Aynı Cihazda Multiplayer Masa Oyunu
+          </span>
+
+          <span class="date">
+            2026
+          </span>
+
+        </div>
+
+        <div class="tech">
+          Unity, C#, aynı cihazda multiplayer mimarisi
+        </div>
+
+        <ul>
+
+          <li>
+            Royal Gem'i Bambu Games fiziksel oyun masası platformu için
+            aynı cihazda eş zamanlı 4–6 oyuncuyu destekleyecek şekilde geliştirdim.
+          </li>
+
+          <li>
+            Senkronize oyun akışı, ortak input yönetimi ve tur yönetimi dahil
+            projeyi 3 haftalık yoğun bir geliştirme sürecinde tamamladım.
+          </li>
+
+          <li>
+            Ortak cihaz etkileşimi için optimize edilmiş, hızlı tepki veren
+            ve tutarlı oyuncu deneyimi sunan oyun sistemleri tasarladım.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- TRIPEAKS -->
+
+      <div class="item">
+
+        <div class="item-head">
+
+          <span class="role">
+            TriPeaks Sistemleri — Aynı Cihazda Multiplayer Framework
+          </span>
+
+          <span class="date">
+            2026
+          </span>
+
+        </div>
+
+        <div class="tech">
+          Unity, C#, data-driven sistemler
+        </div>
+
+        <ul>
+
+          <li>
+            Bambu Games masa platformundaki aynı cihazda multiplayer oyunlar
+            için temel TriPeaks framework'ünü 2 haftada geliştirdim.
+          </li>
+
+          <li>
+            Kart mantığı, kural doğrulama, ilerleme ve ortak oyuncu etkileşimi
+            için yeniden kullanılabilir sistemler geliştirdim.
+          </li>
+
+          <li>
+            Modüler ve data-driven mimari sayesinde yeni TriPeaks
+            varyasyonlarının 1–2 gün içinde üretilmesini sağladım.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- DRIVING -->
+
+      <div class="item">
+
+        <div class="item-head">
+
+          <span class="role">
+            Sürüş Simülasyonu Oyunları
+          </span>
+
+          <span class="date">
+            2021 – 2024
+          </span>
+
+        </div>
+
+        <div class="tech">
+          Unity, C#, özel fizik sistemleri, Wheel Colliders, Google Play
+        </div>
+
+        <ul>
+
+          <li>
+            Google Play'de yayınlanan sürüş simülasyonu oyunları için
+            oyun sistemleri, araç kontrolü, görev akışı, UI/UX ve fizik
+            özellikleri geliştirdim.
+          </li>
+
+          <li>
+            Hem casual erişilebilirliği hem de simülasyon tarzı sürüş
+            hissini desteklemek için fizik, input hissi ve oyun yapısını düzenledim.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- OTHER BAMBU -->
+
+      <div class="item">
+
+        <div class="item-head">
+
+          <span class="role">
+            Diğer Bambu Games Masa Projeleri
+          </span>
+
+          <span class="date">
+            2026
+          </span>
+
+        </div>
+
+        <div class="tech">
+          Unity, C#, masa tabanlı multiplayer / casual oyunlar
+        </div>
+
+        <ul>
+
+          <li>
+            Bambu Games masa platformunda yer alan birçok casual ve
+            multiplayer projenin geliştirilmesine katkı sağladım.
+          </li>
+
+          <li>
+            Hızlı oyun iterasyonlarında üretimi hızlandırmak için ortak oyun
+            sistemlerini ve editor araçlarını yeniden kullandım.
+          </li>
+
+        </ul>
+
+      </div>
+
     </section>
 
+
+    <!-- SKILLS -->
+
     <section class="section">
-      <div class="section-title">YETKİNLİKLER</div>
+
+      <div class="section-title">
+        YETKİNLİKLER
+      </div>
 
       <dl class="skills-grid">
-        <dt>Programlama Dilleri</dt>
-        <dd>İleri seviye C#, Python, SQL, Android Java</dd>
 
-        <dt>Yazılım Geliştirme</dt>
-        <dd>Uygulama geliştirme, gereksinim analizi, debugging, test, otomasyon, API entegrasyonu</dd>
+        <dt>
+          Programlama Dilleri
+        </dt>
 
-        <dt>Veritabanı</dt>
-        <dd>İlişkisel veritabanı ve şema tasarımı, SQL sorguları, CRUD işlemleri, veri modelleme, NoSQL veritabanı
-          yönetimi</dd>
+        <dd>
+          İleri seviye C#, Python, SQL, Android Java
+        </dd>
 
-        <dt>Oyun Motoru ve Araçlar</dt>
-        <dd>Unity, URP, UI Toolkit, Addressables, Animator, Cinemachine, Unity Profiler, Memory Profiler</dd>
 
-        <dt>Multiplayer ve Backend</dt>
-        <dd>Firebase Auth, Realtime Database, Firestore, Remote Config, PlayFab, Photon PUN2 / Fusion, Mirror</dd>
+        <dt>
+          Yazılım Geliştirme
+        </dt>
 
-        <dt>Mobil ve Gelir Sistemleri</dt>
-        <dd>Android build süreçleri, AdMob, IAP, Mediation, GDPR izin akışları, Play Console</dd>
+        <dd>
+          Uygulama geliştirme, gereksinim analizi, debugging,
+          test, otomasyon, API entegrasyonu
+        </dd>
 
-        <dt>Mimari</dt>
-        <dd>SOLID, OOP, MVC, MVP, Observer, State, Command, DOTween, ScriptableObject tabanlı tasarım</dd>
 
-        <dt>Çalışma Süreçleri</dt>
-        <dd>Git, GitHub / GitLab, Trello / Jira, code review, ekip liderliği, proje yönetimi, Agile / Scrum</dd>
+        <dt>
+          Veritabanı
+        </dt>
 
-        <dt>Performans</dt>
-        <dd>Draw call optimizasyonu, batching, GC azaltma, async/await, object pooling, asset optimizasyonu</dd>
+        <dd>
+          İlişkisel veritabanı ve şema tasarımı, SQL sorguları,
+          CRUD işlemleri, veri modelleme, NoSQL veritabanı yönetimi
+        </dd>
+
+
+        <dt>
+          Oyun Motoru ve Araçlar
+        </dt>
+
+        <dd>
+          Unity, URP, UI Toolkit, Addressables, Animator,
+          Cinemachine, Unity Profiler, Memory Profiler
+        </dd>
+
+
+        <dt>
+          Multiplayer ve Backend
+        </dt>
+
+        <dd>
+          Firebase Auth, Realtime Database, Firestore,
+          Remote Config, PlayFab, Photon PUN2 / Fusion, Mirror
+        </dd>
+
+
+        <dt>
+          Mobil ve Gelir Sistemleri
+        </dt>
+
+        <dd>
+          Android build süreçleri, AdMob, IAP, Mediation,
+          GDPR izin akışları, Play Console
+        </dd>
+
+
+        <dt>
+          Mimari
+        </dt>
+
+        <dd>
+          SOLID, OOP, MVC, MVP, Observer, State, Command,
+          DOTween, ScriptableObject tabanlı tasarım
+        </dd>
+
+
+        <dt>
+          Çalışma Süreçleri
+        </dt>
+
+        <dd>
+          Git, GitHub / GitLab, Trello / Jira, code review,
+          ekip liderliği, proje yönetimi, Agile / Scrum
+        </dd>
+
+
+        <dt>
+          Performans
+        </dt>
+
+        <dd>
+          Draw call optimizasyonu, batching, GC azaltma,
+          async/await, object pooling, asset optimizasyonu
+        </dd>
+
       </dl>
+
     </section>
 
+
+    <!-- EDUCATION -->
+
     <section class="section">
-      <div class="section-title">EĞİTİM</div>
+
+      <div class="section-title">
+        EĞİTİM
+      </div>
+
       <div class="item-head">
-        <span class="role">Lisans, Bilgisayar Mühendisliği — Süleyman Demirel Üniversitesi</span>
-        <span class="date">2014 – 2018</span>
+
+        <span class="role">
+          Lisans, Bilgisayar Mühendisliği — Süleyman Demirel Üniversitesi
+        </span>
+
+        <span class="date">
+          2013 – 2019
+        </span>
+
       </div>
+
     </section>
 
+
+    <!-- LANGUAGES -->
+
     <section class="section">
-      <div class="section-title">DİLLER</div>
-      <div class="lang-list">
-        <span><strong>Türkçe</strong> — Ana dil</span>
-        <span><strong>İngilizce</strong> — Günlük konuşma / Mesleki çalışma yeterliliği</span>
+
+      <div class="section-title">
+        DİLLER
       </div>
+
+      <div class="lang-list">
+
+        <span>
+          <strong>Türkçe</strong> — Ana dil
+        </span>
+
+        <span>
+          <strong>İngilizce</strong> — Günlük konuşma / Mesleki çalışma yeterliliği
+        </span>
+
+      </div>
+
     </section>
+
   </main>
+
+
   <script>
+
     const translatableElements = document.querySelectorAll(
       ".header h2, .summary, .section-title, .role, .item-subtitle, li, .tech, .skills-grid dt, .skills-grid dd, .lang-list span"
     );
 
+
     const englishContent = [
+
+      /*
+       * HEADER
+       */
+
       "Senior Game Developer (Unity) | Software Developer",
-      "I am a Computer Engineering graduate with more than 5 years of software development experience. I have advanced knowledge of C# and Unity, and also work with Python, SQL, relational and NoSQL database design, Firebase services, software architecture, team leadership, and project management. I develop production-ready, maintainable, and performance-focused applications, tools, and interactive systems.",
+
+      "I am a Computer Engineering graduate with more than 6 years of software development experience. I have advanced knowledge of C# and Unity, and also work with Python, SQL, relational and NoSQL database design, Firebase services, software architecture, team leadership, and project management. I develop production-ready, maintainable, and performance-focused applications, tools, and interactive systems.",
+
+
+      /*
+       * EXPERIENCE
+       */
+
       "EXPERIENCE",
+
+
+      /*
+       * FINK GAMES
+       */
+
+      "Senior Game Developer — Fink Games",
+
+      "Developed the FinkAPI foundation used across multiple Unity projects, including a service locator architecture, modular services, and reusable packages.",
+
+      "Built core gameplay systems for table and casual games, including gameplay flow, board/path systems, player and team rotation, state management, and interaction systems.",
+
+      "Standardized shared technical infrastructure across projects by developing reusable runtime systems including heartbeat, production log reporting, and common API services.",
+
+      "Built reusable Player HUD, interaction panel, and UI animation systems to provide a consistent interface architecture across multiple games.",
+
+      "Collaborated closely with the design team to evaluate technical feasibility, shape gameplay and UI/UX flows, and integrate designs into Unity.",
+
+      "Mentored interns within the game development team through task planning, code reviews, and technical guidance, helping them gain hands-on development experience on production projects.",
+
+
+      /*
+       * BAMBU GAMES
+       */
+
       "Senior Game Developer — Bambu Games",
+
       "Architected reusable gameplay systems using state machines, modular UI, event-driven flows, and shared gameplay logic across multiple game projects.",
+
       "Contributed to 70+ production iterations, improving development speed, code reuse, gameplay quality, and maintainability.",
+
       "Built a reusable TriPeaks framework in 2 weeks, enabling new game variants to be produced within 1–2 days depending on mechanic changes and side-feature complexity.",
+
       "Mentored 7 developers through code reviews, technical guidance, and shared development practices.",
+
       "Defined Git workflows and coding standards to improve consistency, onboarding, and review quality across projects.",
+
       "Coordinated technical tasks, implementation priorities, and delivery across concurrent projects.",
+
+
+      /*
+       * KODLAND
+       */
+
       "Online Coding Instructor — Unity — Kodland",
+
       "Part-time",
+
       "Delivered live online Unity and game development education to children and teenagers aged 9–17, adapting technical concepts and lesson delivery to different age groups and experience levels.",
+
       "Successfully graduated 24 student groups, with approximately 12 students per group, through a structured curriculum covering programming fundamentals, game mechanics, UI, physics, animation, and project work.",
+
       "Tracked attendance and student progress, evaluated assignments and in-class participation, and prepared post-lesson reports and feedback for each group.",
+
+
+      /*
+       * SRT
+       */
+
       "Unity Game Developer — SRT Yazılım",
+
       "Built an ad-fraud detection system that filtered high-risk invalid traffic, helping protect long-term AdMob monetization across studio projects.",
+
       "Integrated and managed Firebase-backed application data, authentication, analytics, and Remote Config for production mobile applications.",
+
       "Optimized a frame-critical operation from 0.36 ms to 0.07 ms per call, reducing GC pressure and improving frame stability on low-end Android devices.",
+
       "Shipped multiple Android mobile titles end-to-end, contributing gameplay systems, level design, UI/UX, and live project support.",
+
       "Improved onboarding, shop, and settings flows across mobile games to increase usability and player experience quality.",
+
+
+      /*
+       * SELECTED PROJECTS
+       */
+
       "SELECTED PROJECTS",
+
+
+
+      /*
+       * FINK GAMES
+       */
+
+      "Fink Games — 40+ Table & Casual Games",
+
+      "Unity, C#, same-device multiplayer, reusable gameplay systems",
+
+      "Developed more than 40 same-device multiplayer and casual games for the Fink Games platform.",
+
+      "Implemented a wide range of gameplay mechanics in Unity, including property-trading, race/progression, word, card, and arcade-style games.",
+
+      "Accelerated development and maintained architectural consistency across projects by reusing shared gameplay, input, turn management, player flow, and UI systems.",
+
+
+      /*
+       * FINK PLAYING CARD & ANIMATION FRAMEWORK
+       */
+
+      "Playing Card & Animation Framework — Reusable Card Systems",
+
+      "Unity, C#, reusable architecture, data-driven systems, animation systems",
+
+      "Developed a reusable foundation for standard playing-card games, including card creation, deck management, dealing, selection, sorting, and shared card behaviors.",
+
+      "Built a shared animation system for dealing, moving, flipping, and transitioning cards between targets, making card interactions reusable across multiple projects.",
+
+      "Separated shared card infrastructure from game-specific rules, reducing duplicated code and enabling new card games to be developed more efficiently.",
+
+      "Used these systems across TriPeaks, Eleven, Solitaire, Spider Solitaire, Batak, and Pişti, as well as card-based interactions in games such as Monopoly and Taboo.",
+
+      /*
+       * ROYAL GEM
+       */
+
       "Royal Gem — Same-device Multiplayer Table Game",
+
       "Unity, C#, same-device multiplayer architecture",
+
       "Developed Royal Gem for the Bambu Games physical game table platform with same-device multiplayer supporting 4–6 concurrent players.",
+
       "Completed the project in a focused 3-week development cycle, including synchronized gameplay flow, shared input handling, and round management.",
+
       "Designed gameplay systems optimized for shared-device interaction, ensuring responsiveness and a consistent player experience.",
+
+
+      /*
+       * TRIPEAKS
+       */
+
       "TriPeaks Systems — Same-device Multiplayer Framework",
+
       "Unity, C#, data-driven systems",
+
       "Developed the core TriPeaks framework in 2 weeks for same-device multiplayer gameplay on the Bambu Games table platform.",
+
       "Built reusable systems for card logic, rule validation, progression, and shared player interaction.",
+
       "Enabled production of new TriPeaks variants within 1–2 days by leveraging a modular and data-driven architecture.",
+
+
+      /*
+       * DRIVING SIMULATION
+       */
+
       "Driving Simulation Games",
+
       "Unity, C#, custom physics systems, Wheel Colliders, Google Play",
+
       "Developed gameplay systems, vehicle handling, mission flow, UI/UX, and physics features for driving simulation games published on Google Play.",
+
       "Tuned physics, input feel, and gameplay structure to support both casual accessibility and simulation-style driving feedback.",
+
+
+      /*
+       * OTHER BAMBU PROJECTS
+       */
+
       "Other Bambu Games Table Projects",
+
       "Unity, C#, table-based multiplayer / casual games",
+
       "Developed and contributed to multiple casual and multiplayer projects available on the Bambu Games table platform.",
+
       "Reused shared gameplay systems and editor tools to accelerate production across rapid game iterations.",
+
+
+      /*
+       * SKILLS
+       */
+
       "SKILLS",
+
       "Programming Languages",
+
       "Advanced C#, Python, SQL, Android Java",
+
       "Software Development",
+
       "Application development, requirements analysis, debugging, testing, automation, API integration",
+
       "Database",
+
       "Relational database and schema design, SQL queries, CRUD operations, data modeling, NoSQL database management",
+
       "Engine &amp; Tools",
+
       "Unity, URP, UI Toolkit, Addressables, Animator, Cinemachine, Unity Profiler, Memory Profiler",
+
       "Multiplayer &amp; Backend",
+
       "Firebase Auth, Realtime Database, Firestore, Remote Config, PlayFab, Photon PUN2 / Fusion, Mirror",
+
       "Mobile &amp; Monetization",
+
       "Android build pipelines, AdMob, IAP, Mediation, GDPR consent flows, Play Console",
+
       "Architecture",
+
       "SOLID, OOP, MVC, MVP, Observer, State, Command, DOTween, ScriptableObject-driven design",
+
       "Workflow",
+
       "Git, GitHub / GitLab, Trello / Jira, code review, team leadership, project management, Agile / Scrum",
+
       "Performance",
+
       "Draw call optimization, batching, GC reduction, async/await, object pooling, asset optimization",
+
+
+      /*
+       * EDUCATION
+       */
+
       "EDUCATION",
+
       "B.Sc., Computer Engineering — Süleyman Demirel University",
+
+
+      /*
+       * LANGUAGES
+       */
+
       "LANGUAGES",
+
       "<strong>Turkish</strong> — Native",
+
       "<strong>English</strong> — Conversational / Professional Working Proficiency"
+
     ];
 
+
     translatableElements.forEach((element, index) => {
+
       element.dataset.tr = element.innerHTML;
-      element.dataset.en = englishContent[index];
+
+      if (englishContent[index] !== undefined) {
+        element.dataset.en = englishContent[index];
+      }
+
     });
+
 
     function setLanguage(language) {
-      const selectedLanguage = language === "en" ? "en" : "tr";
+
+      const selectedLanguage =
+        language === "en"
+          ? "en"
+          : "tr";
+
+
       translatableElements.forEach((element) => {
-        element.innerHTML = element.dataset[selectedLanguage];
+
+        const content =
+          element.dataset[selectedLanguage];
+
+        if (content !== undefined) {
+          element.innerHTML = content;
+        }
+
       });
-      document.documentElement.lang = selectedLanguage;
-      document.querySelectorAll("[data-language]").forEach((button) => {
-        const isActive = button.dataset.language === selectedLanguage;
-        button.classList.toggle("active", isActive);
-        button.setAttribute("aria-pressed", String(isActive));
+
+
+      document.documentElement.lang =
+        selectedLanguage;
+
+      document
+      .querySelectorAll(".localized-date")
+      .forEach((element) => {
+        element.textContent =
+          element.dataset[selectedLanguage];
       });
-      localStorage.setItem("cv-language", selectedLanguage);
+
+      document
+        .querySelectorAll("[data-language]")
+        .forEach((button) => {
+
+          const isActive =
+            button.dataset.language === selectedLanguage;
+
+          button.classList.toggle(
+            "active",
+            isActive
+          );
+
+          button.setAttribute(
+            "aria-pressed",
+            String(isActive)
+          );
+
+        });
+
+
+      localStorage.setItem(
+        "cv-language",
+        selectedLanguage
+      );
+
     }
 
-    document.querySelectorAll("[data-language]").forEach((button) => {
-      button.addEventListener("click", () => setLanguage(button.dataset.language));
-    });
 
-    setLanguage(localStorage.getItem("cv-language") || "tr");
+    document
+      .querySelectorAll("[data-language]")
+      .forEach((button) => {
+
+        button.addEventListener(
+          "click",
+          () => setLanguage(button.dataset.language)
+        );
+
+      });
+
+
+    setLanguage(
+      localStorage.getItem("cv-language") || "tr"
+    );
+
   </script>
+
 </body>
 
 </html>
