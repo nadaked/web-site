@@ -152,6 +152,20 @@
       margin: 2px 0 3px;
     }
 
+    .project-link {
+      display: inline-block;
+      margin: 1px 0 3px;
+      color: var(--accent);
+      font-size: 0.83rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .project-link:hover,
+    .project-link:focus-visible {
+      text-decoration: underline;
+    }
+
     ul {
       margin: 4px 0 0 18px;
       padding: 0;
@@ -261,6 +275,10 @@
       .tech {
         font-size: 0.74rem;
         margin: 1px 0 2px;
+      }
+
+      .project-link {
+        font-size: 0.74rem;
       }
 
       ul {
@@ -617,6 +635,51 @@
 
       <div class="section-title">
         SEÇİLMİŞ PROJELER
+      </div>
+
+      <!-- FINK FORGE -->
+
+      <div class="item">
+
+        <div class="item-head">
+
+          <span class="role">
+            Fink Forge — Unity Runtime Entegrasyon Paketi
+          </span>
+
+          <span class="date">
+            2026
+          </span>
+
+        </div>
+
+        <div class="tech">
+          Unity Package Manager, C#, REST API, lifecycle, score ve player management
+        </div>
+
+        <a class="project-link" href="https://github.com/Fink-Games/FinkForge" target="_blank" rel="noopener">
+          GitHub: Fink-Games/FinkForge
+        </a>
+
+        <ul>
+
+          <li>
+            Dış geliştiricilerin Unity oyunlarını backend ayrıntılarını bilmeden Fink Forge runtime'a entegre
+            edebilmesi için yeniden kullanılabilir bir Unity Package geliştirdim.
+          </li>
+
+          <li>
+            Uygulama lifecycle, oyuncu ve takım verileri, skor yönetimi, heartbeat, güvenli kapanış ve otomatik hata
+            bildirimi süreçlerini geliştirici dostu, küçük ve sade bir public API altında topladım.
+          </li>
+
+          <li>
+            Session ve skor akışlarında duplicate istekleri önleyen, başarısız teslimatlarda retry uygulayan ve API
+            key bilgisini oyun kodundan ayıran sürdürülebilir bir entegrasyon mimarisi kurdum.
+          </li>
+
+        </ul>
+
       </div>
 
       <!-- FINK GAMES -->
@@ -1127,6 +1190,21 @@
        */
 
       "SELECTED PROJECTS",
+
+
+      /*
+       * FINK FORGE
+       */
+
+      "Fink Forge — Unity Runtime Integration Package",
+
+      "Unity Package Manager, C#, REST API, lifecycle, score and player management",
+
+      "Developed a reusable Unity Package that enables external developers to integrate their Unity games with the Fink Forge runtime without needing to understand backend implementation details.",
+
+      "Unified application lifecycle, player and team data, score management, heartbeat, safe shutdown, and automatic incident reporting behind a small, focused, and developer-friendly public API.",
+
+      "Designed a maintainable integration architecture that prevents duplicate session and score requests, retries failed deliveries, and keeps API keys isolated from game code.",
 
 
 
